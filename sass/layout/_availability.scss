@@ -1,0 +1,283 @@
+@use "../helper/var" as *;
+
+.availability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    height: 100vh;
+    gap: 2em;
+
+    .title {
+        h2 {
+            @extend %titles;
+        }
+    }
+
+    .availability-book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        .date-inputs {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+
+                input {
+                    @extend %inputs;
+                    min-height: 3.6em;
+                }
+
+                select {
+                    @extend %inputs;
+                    padding: .8em;
+                    min-height: 3.6em;
+                }
+
+                label {
+                    font-weight: 700;
+                    color: $dark;
+                }
+            }
+        }
+
+        .bnb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            .title {
+                p {
+                    font-size: 1.2em;
+                    font: 700;
+                }
+            }
+
+            .airbnb {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    width: 9em;
+                    height: 3.5em;
+                    background-color: #ffffff;
+                    @extend %buttons;
+
+                    &::before {
+                        width: 9.5em;
+                        height: 4em;
+                    }
+
+                    img {
+                        width: 75%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .close-price {
+            display: none !important;
+        }
+        .tatal-price-card {
+            width: 100%;
+            padding: 1em;
+            .calc-info {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                width: 100%;
+
+                .special {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    p {
+                        font-size: 1.2em;
+                        font-weight: 800;
+                        color: orange;
+                        animation: discount 1.5s ease infinite;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 0.8em;
+
+                    p {
+                        font-size: 1.1em;
+                        font-weight: 700;
+                    }
+
+                    .disabled-dsc {
+                        text-decoration: line-through;
+                        color: $dark-gray;
+                    }
+
+                    .open-dsc {
+                        color: orange;
+                    }
+
+                    .close-dsc {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .booking {
+            width: 9em;
+            height: 3em;
+            padding: 1em;
+            @extend %buttons;
+
+            &::before {
+                width: 9.5em;
+                height: 3.5em;
+            }
+        }
+
+        .disabled {
+            width: 9em;
+            height: 3em;
+            padding: 1em;
+            color: $white;
+            cursor: no-drop;
+            background-color: $dark-gray;
+            font-weight: 700;
+            border-radius: .5em; 
+        }
+
+        .open-popup-cont {
+            display: flex !important;
+        }
+        .popup-container {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #ffffffcb;
+            z-index: 999999999999;
+            transition: 1s ease;
+
+            .active-popup {
+                left: 0 !important;
+                opacity: 1 !important;
+            }
+
+            .popup {
+                width: 60%;
+                height: 70%;
+                border-radius: 3em;
+                background: #e0e0e0;
+                box-shadow: 20px 20px 60px #bebebe,
+                            -20px -20px 60px #ffffff;
+                padding: 3em;
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+                position: relative;
+                left: -150%;
+                opacity: 0;
+                transition: 2s ease;
+                transition-delay: 1s;
+                .contact-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 1.5em;
+
+                    .fields {
+                        display: none;
+                        width: 100%;
+                        // height: 5em;
+                        // justify-content: center;
+                        font-weight: 700;
+                        color: red;
+                        font-size: 0.8em;
+                        align-items: center;
+                        // animation: discount 1.5s ease infinite;
+                    }
+
+                    .input-cont {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 1em;
+
+                        .field {
+                            border: 1px solid #f00;
+                        }
+
+                        input {
+                            width: 50%;
+                            border-radius: 1em;
+                            padding: 1.2em;
+                            outline: none;
+                        }
+
+                        label {
+                            font-weight: 700;
+                            .field-lable-active {
+                                display: inline !important;
+                                color: #f00;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    text-decoration: none;
+                    width: 40%;
+                    height: 4em;
+                    padding: 1em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-color: $primary-color;
+                    color: $white;
+                    gap: .75em;
+                    border-radius: .5em; 
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@keyframes discount {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

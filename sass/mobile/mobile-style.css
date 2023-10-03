@@ -1,0 +1,395 @@
+@media (max-width: 1024px) {
+  header .container {
+    position: relative;
+    padding: 2em 1.5em;
+  }
+  header .container .header-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    color: #000 !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    left: 150%;
+    top: 0;
+    z-index: 999999999;
+    transition: 0.5s ease;
+  }
+  header .container .header-bottom ul {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #0e385d;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container .active-menu {
+    left: 0;
+  }
+  header .container .line {
+    display: none;
+  }
+  .header-top .row .burger {
+    display: flex !important;
+    font-size: 2em;
+    color: #fff;
+    z-index: 10000000000000000000000000000000000000000000000;
+  }
+  .header-top .row .burger .close {
+    display: none;
+  }
+  .header-top .row .site-logo {
+    width: 15em !important;
+  }
+  .landign {
+    height: 70dvh;
+    overflow: hidden;
+  }
+  .landign .info p {
+    font-size: 0.9em;
+  }
+  .landign .swiper-slide:nth-child(1) img {
+    content: url(./images/nile_view_medium.webp);
+  }
+  .landign .swiper-slide:nth-child(2) img {
+    content: url(./images/nile_view2_medium.webp);
+  }
+  .landign .swiper-slide:nth-child(3) img {
+    content: url(./images/Reception_medium.webp);
+  }
+  .about .about-info {
+    grid-template-rows: 1fr auto;
+    grid-template-columns: unset;
+    justify-content: unset;
+    width: 100%;
+  }
+  .about .about-info .words {
+    justify-content: unset;
+    flex-direction: column;
+  }
+  .about .about-info .words .info-title h3 {
+    font-size: 2.25em;
+  }
+  .about .about-info .words ul li {
+    line-height: 1.7;
+    margin-left: 0.5em;
+  }
+  .about .about-info .words ul li::marker {
+    font-size: 1.8em;
+  }
+  .about .about-info .words ul li p {
+    font-size: 1.8em;
+  }
+  .about .about-info .words ul ul li {
+    font-size: 1.8em;
+  }
+  .about .about-info .images {
+    margin: 1.2em 0;
+  }
+  .info-bubbles {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.6em;
+  }
+  .info-bubbles .bubble {
+    width: calc((100% - 3em) / 2);
+  }
+  .info-bubbles .bubble .icon {
+    max-width: 40px !important;
+    max-height: 40px !important;
+  }
+  .info-bubbles .bubble p {
+    font-size: 1.5em !important;
+  }
+  .contact-bar {
+    padding: 2em !important;
+    gap: 2.5em;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact-bar .title h2 {
+    font-size: 1.7em;
+  }
+  .contact-bar .title h3 {
+    font-size: 1.3em;
+  }
+  .contact-bar .contacts h3 {
+    font-size: 1.5em;
+  }
+  .services {
+    gap: 3em;
+  }
+  .services .container {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: unset;
+  }
+  .services .container .title {
+    margin: 2em 0;
+  }
+  .services .container .title h2 {
+    font-size: 3.8em !important;
+  }
+  .services .container .services-info {
+    padding: 0 1em;
+  }
+  .services .container .services-info .line-style ul {
+    padding: 0 1em;
+  }
+  .services .container .services-info li {
+    font-size: 1.8em !important;
+    line-height: 1.7;
+  }
+  .services .the-rest {
+    gap: 1.8em;
+  }
+  .services .the-rest .rest-serv {
+    width: calc((100% - 2em) / 2) !important;
+    height: 10em;
+    justify-content: space-between;
+  }
+  .services .the-rest .rest-serv .image {
+    width: 3em;
+    height: 3.2em;
+  }
+  .services .the-rest .rest-serv p {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  footer .logo .image {
+    width: 13em;
+  }
+  footer .logo .copy-right {
+    flex-direction: column;
+  }
+  footer .logo .copy-right p {
+    font-size: 0.9em;
+  }
+  .confirm-popup .cont h2 {
+    font-size: 1.2em;
+  }
+  .confirm-popup .cont h3 {
+    font-size: 1em;
+  }
+  .availability {
+    height: unset;
+    padding: 6em 2em;
+  }
+  .availability .availability-book {
+    width: 100%;
+  }
+  .availability .availability-book .date-inputs {
+    width: 100%;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .availability .availability-book .date-inputs .input-wrapper {
+    margin: 0 auto;
+    width: calc((100% - 2em) / 2);
+    justify-content: center;
+    align-items: center;
+  }
+  .availability .availability-book .date-inputs .input-wrapper label {
+    font-weight: 900;
+  }
+  .availability .availability-book .date-inputs .input-wrapper input {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .availability .availability-book .date-inputs .input-wrapper select {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .availability .availability-book .bnb .title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  .availability .availability-book .popup-container .popup .contact-info .input-cont input {
+    width: 100%;
+  }
+  .about .about-info .words ul li {
+    font-weight: 600;
+  }
+  .about .about-info .images .swiper-any {
+    width: 16em;
+    height: 22em;
+  }
+  .reviews .review-swiper .swiper-slide .reviewp {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .contact .title h2 {
+    font-size: 2.9em;
+  }
+  .contact .title h3 {
+    font-size: 1.3em;
+  }
+  .contact .info-cont {
+    flex-wrap: wrap;
+    gap: 1.5em;
+  }
+  .contact .info-cont .info {
+    width: calc((100% - 1.5em) / 2);
+    height: unset;
+    padding: 1.2em;
+    border: 1px solid #eeeeee;
+  }
+  .contact .info-cont .info .icon i {
+    font-size: 2.6em;
+  }
+  .contact .info-cont .info p {
+    font-size: 1.2em;
+  }
+  .contact .info-cont .info:nth-child(3) p {
+    font-size: 1.1em;
+  }
+  .contact .contact-container .inputs label {
+    font-weight: 800 !important;
+  }
+}
+@media (min-width: 765px) and (max-width: 1024px) {
+  .grid-item:nth-child(1) a img {
+    content: url(./images/nile_view_medium.webp);
+  }
+  .grid-item:nth-child(2) a img {
+    content: url(./images/room1_medium.webp);
+  }
+  .grid-item:nth-child(3) a img {
+    content: url(./images/dinner_table_medium.webp);
+  }
+  .grid-item:nth-child(4) a img {
+    content: url(./images/living_room_medium.webp);
+  }
+  .grid-item:nth-child(5) a img {
+    content: url(./images/Hall_medium.webp);
+  }
+  .grid-item:nth-child(6) a img {
+    content: url(./images/room2_medium.webp);
+  }
+  .grid-item:nth-child(7) a img {
+    content: url(./images/nile_view2_medium.webp);
+  }
+  .grid-item:nth-child(9) a img {
+    content: url(./images/room3_medium.webp);
+  }
+  .grid-item:nth-child(10) a img {
+    content: url(./images/Reception_medium.webp);
+  }
+  .grid-item:nth-child(12) a img {
+    content: url(./images/kitchen_medium.webp);
+  }
+  .grid-item:nth-child(11) a img {
+    content: url(./images/bathroom_medium.webp);
+  }
+}
+@media (max-width: 766.98px) {
+  .grid-item:nth-child(1) a img {
+    content: url(./images/nile_view_small.webp);
+  }
+  .grid-item:nth-child(2) a img {
+    content: url(./images/room1_small.webp);
+  }
+  .grid-item:nth-child(3) a img {
+    content: url(./images/dinner_table_small.webp);
+  }
+  .grid-item:nth-child(4) a img {
+    content: url(./images/living_room_small.webp);
+  }
+  .grid-item:nth-child(5) a img {
+    content: url(./images/Hall_small.webp);
+  }
+  .grid-item:nth-child(6) a img {
+    content: url(./images/room2_small.webp);
+  }
+  .grid-item:nth-child(7) a img {
+    content: url(./images/nile_view2_medium.webp);
+  }
+  .grid-item:nth-child(9) a img {
+    content: url(./images/room3_small.webp);
+  }
+  .grid-item:nth-child(10) a img {
+    content: url(./images/Reception_small.webp);
+  }
+  .grid-item:nth-child(12) a img {
+    content: url(./images/kitchen_small.webp);
+  }
+  .grid-item:nth-child(11) a img {
+    content: url(./images/bathroom_small.webp);
+  }
+}
+@media (max-width: 765px) {
+  .availability .availability-book .date-inputs .input-wrapper {
+    width: calc((100% - 2em) / 2);
+  }
+  .availability .availability-book .date-inputs .input-wrapper input {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .availability .availability-book .popup-container .popup {
+    height: unset;
+  }
+  .landign .info {
+    gap: 3em;
+  }
+  .landign .info p {
+    font-size: 1.7em;
+    padding: 0 0.6em;
+  }
+  .gallery .picture .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .gallery .picture .grid-item:nth-child(3n-2) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .info-bubbles {
+    padding: 3em;
+  }
+  .rest-serv p {
+    font-size: 1.3em !important;
+  }
+  .contact .contact-container {
+    width: 80%;
+  }
+  footer {
+    padding: 0 1em;
+    gap: 0.5em;
+  }
+  footer .logo {
+    gap: 0;
+  }
+  footer .logo .image {
+    width: 15em;
+  }
+  footer .copy-right {
+    text-align: center;
+  }
+  footer .copy-right p {
+    font-size: 0.77em !important;
+  }
+}
+@media (min-width: 495px) and (max-width: 660px) {
+  body {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 371px) and (max-width: 494.98px) {
+  body {
+    font-size: 9px !important;
+  }
+}
+@media (max-width: 370.98px) {
+  body {
+    font-size: 8px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1197.98px) {
+  body {
+    font-size: 14px !important;
+  }
+}/*# sourceMappingURL=mobile-style.css.map */

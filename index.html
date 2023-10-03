@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="canonical" href="https://www.agouzanileview.com" />
+	<link rel="icon" type="image/png" href="https://www.agouzanileview.com/images/favicon.png">
+    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials"> 
+	<link rel="shortcut icon" href="https://www.agouzanileview.com/images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://www.agouzanileview.com/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+	<link rel="manifest" href="https://www.agouzanileview.com/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="sass/mobile/mobile-style.css">
+    <title>Agouza Nile View</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="row">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img src="images/logo.webp" alt="Agouza Nile View Apartment Logo">
+                        </a>
+                    </div><!-- /.site-logo -->
+
+                    <div class="left-content">
+                        <ul>
+                            <li class="call">
+                                <div>
+                                    <a href="tel:+201223219338">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+201223219338" target="_blank" class="whatsapp-number">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li id="translate">
+                                <i class="fa-solid fa-globe"></i>
+                                <div class="translate">
+                                    <div class="lang">
+                                        <a href="#">
+                                            English
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <a href="#">
+                                            العربيه
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <a href="#">
+                                            Espanol
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <a href="#">
+                                            Fransais
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <a href="#">
+                                            Italiano
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <a href="#">
+                                            Deutch
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="burger">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark close"></i>
+                        </div>
+                    </div><!-- /.left-content -->
+                </div><!-- /.row -->
+            </div><!-- /.header-top -->
+
+            <div class="line"></div>
+
+            <div class="header-bottom">
+                <ul>
+                    <li>
+                        <a href="index.html" id="link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" id="link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#gellery" id="link">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="#reviews" id="link">Reviews</a>
+                    </li>
+
+                    <li>
+                        <a href="#location" id="link">Location</a>
+                    </li>
+
+                    <li>
+                        <a href="#availability" id="link">Availability</a>
+                    </li>
+                </ul>
+            </div> <!-- /.header-bottom -->  
+        </div><!-- /.container -->
+    </header> <!-- /header -->
+
+    <section id="landign" class="landign">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/nile_view_big.webp" alt="Nile View">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/nile_view2_big.webp" alt="Nile View">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Reception_big.webp" alt="Reception_big">
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>
+                Good Service is our passion
+            </h3>
+
+            <h2>
+                Welcome to Agouza Nile View
+            </h2>
+
+            <div class="info-line"></div>
+
+            <p>
+                Restart, Refresh and Relax
+            </p>
+
+            <a href="#gellery">Gallery</a>
+        </div>
+    </section>
+
+    <section class="availability" id="availability">
+        <div class="title">
+            <h2>
+                For rates & Availability
+            </h2>
+        </div>
+
+        <div id="availability-book" class="availability-book">
+            <div class="date-inputs">
+                <div class="input-wrapper">
+                    <label id="l1" for="checkin-date">Check-in date</label>
+                    <input type="date" id="checkin-date" class="date" placeholder="Select check-in date" min="">
+                </div>
+                <div class="input-wrapper">
+                    <label id="l2" for="checkout-date">Check-out date</label>
+                    <input type="date" id="checkout-date" class="date" placeholder="Select check-out date" min="">
+                </div>
+                <div class="input-wrapper">
+                    <label id="l3" for="guests">Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <!-- Add as many options as necessary -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="bnb">
+                <div class="title">
+                    <p>
+                        Or, You can book your stay directly through.
+                    </p>
+                </div>
+
+                <div class="airbnb">
+                    <a href="https://abnb.me/iIFlFt9EOAb" target="_blank">
+                        <img src="images/airbnb_logo.webp" alt="Logo" class="airbnb-logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="tatal-price-card close-price">
+                <div class="calc-info">
+                    <div class="special">
+                        <p>
+                            Special Offer: Enjoy a discount on stays of 7 days or more!
+                        </p>
+                    </div>
+
+                    <div class="price">
+                        <p class="cleaning-fees">
+                            Cleaning fees: 10$
+                        </p>
+                        <p class="extra-guest">
+                            Extra guest(s) fees: <span id="extra-guest"></span> = <span id="extra-price"></span>
+                        </p>
+                        <p class="accommodation disabled-dsc">
+                            Accommodation cost: <span id="calc-accommodation"></span> = <span id="accommodation-total-price"></span>
+                        </p>
+                        <p class="discount close-dsc open-dsc">
+                            Discounted Rate: <span id="calc-discounted"></span> = <span id="discounted-total-price"></span>
+                        </p>
+                        <p class="total-price disabled-dsc">
+                            Total Price: <span id="total-price-count"></span>
+                        </p>
+                        <p class="discount-price close-dsc open-dsc">
+                            Discounted Total Price: <span id="total-price-dicount"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="booking-button" class="disabled">
+                BOOK
+            </button>
+
+            <div class="popup-container">
+                <div class="popup">
+                    <div class="contact-info">
+                        <div class="input-cont">
+                            <label for="email" class="email-lable">Email <span style="display: none;">*</span></label>
+                            <input type="email" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="input-cont">
+                            <label for="whatsapp" class="whatsapp-lable">WhatsApp <span style="display: none;">*</span></label>
+                            <input type="text" id="whatsapp" placeholder="+1 984 938 9837">
+                        </div>
+                        <div class="fields" id="fields">
+                            <p>
+                                Email or Whatsapp needed for booking 😊
+                            </p>
+                        </div>
+                    </div>
+                    <button id="submit-button" class="">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2>
+                About Us
+            </h2>
+
+            <h3>
+                WELCOME TO YOUR NEXT HOME
+            </h3>
+        </div>
+
+        <div class="about-info">
+            <div class="words">
+                <div class="info-title">
+                    <h3>
+                        About<br>Company
+                    </h3>
+                </div>
+                <ul>
+                    <li>
+                        <p>
+                            AgouzaNileView is a premier house rental company situated in the heart of Agouza, Giza.<br>
+                            With over 5 years in the business, we pride ourselves on our exceptional service<br>
+                            Our spacious rooms ensure a comfortable stay for our guests.<br>
+                            our property is the ideal centralized base for exploring the wonders of Cairo.<br>
+                            Our dedicated staff, is available 24/7, ensuring that our guests' needs are always met.<br> 
+                            Whether you're here for a short visit or looking for long-term accommodation, AgouzaNileView promises a memorable stay
+                        </p>
+
+                        <ul>
+                            <li>
+                                Situated in the heart of Agouza, Giza, offering breathtaking views of the Nile from all its rooms.
+                            </li>
+                            <li>
+                                boasting a 4-star rating on platforms like Airbnb and Booking.com.
+                            </li>
+                            <li>
+                                Located right in the center of Egypt.
+                            </li>
+                            <li>
+                                4/7 Professional staff, fluent in Arabic, English, and Spanish.
+                            </li>
+                            <li>
+                                Book Your Memorable Stay now.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="images">
+                <div class="swiper-any mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/Reception_big.webp" alt="Reception">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/living_room_big.webp" alt="Living Room">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/reception2.webp" alt="Reception">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/nile_view2_big.webp" alt="View">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-bubbles">
+        <div class="bubble">
+            <div class="icon">
+                <img src="https://static.thenounproject.com/png/6902-200.png" alt="House with Dollar Sign" />
+            </div>
+            <p id='p1bubble'>500+ rentals on Airbnb and Booking.com</p>
+        </div>
+        <div class="bubble">
+            <div class="icon">
+                <img src="https://static.thenounproject.com/png/5240929-200.png" alt="Reviews Symbol" />
+            </div>
+            <p id='p2bubble'>4★ rating on Airbnb and Booking.com</p>
+        </div>
+        <div class="bubble">
+            <div class="icon">
+                <img src="https://static.thenounproject.com/png/10949-200.png" alt="Support Symbol" />
+            </div>
+            <p id='p3bubble'>Staff is available 24/7 for Support</p>
+        </div>
+        <div class="bubble">
+            <div class="icon">
+                <img src="https://static.thenounproject.com/png/30626-200.png" alt="Five Years Symbol" />
+            </div>
+            <p id='p4bubble'>5+ years in the Business</p>
+        </div>
+        <div class="bubble">
+            <div class="icon">
+                <img src="https://static.thenounproject.com/png/113907-200.png" alt="Discount Symbol" />
+            </div>
+            <p id='p5bubble'>Long term accommodation discounts!</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Our<br>
+                    Services
+                </h2>
+            </div>
+
+            <div class="services-info">
+                <div class="line-style">
+                    <i class="fa-solid fa-plus"></i>
+                    <div class="line">
+    
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Open view on the Nile from all rooms.<br>
+                    </li>
+                    <li>
+                        Fully air-conditioned spacious rooms and modern ameneties.
+                    </li>
+                    <li>
+                        Around 3.7 km from Tahrir square, The Egyptian museum and Cairo tower.
+                    </li>
+                    <li>
+                        The apartment has a large living room, a salon, 2 bedrooms, a kitchen,<br>
+                        a balcony and a bathroom.
+                    </li>
+                    <li>
+                        Staff speaks Arabic, English and Spanish.Available for support 24/7.<br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="the-rest">
+            <div class="rest-serv">
+                <div class="image">
+                    <img src="images/icons/icons8-wifi.gif" alt="wifi">
+                </div>
+                <p>
+                    Free Wifi
+                </p>
+            </div>
+            <div class="rest-serv end">
+                <div class="image">
+                    <img src="images/icons/icons8-tv-50.webp" alt="Tv">
+                </div>
+                <p>
+                    55" HDTV with cable
+                </p>
+            </div>
+            <div class="rest-serv">
+                <div class="image">
+                    <img src="images/icons/icons8-stove-50.webp" alt="wifi">
+                </div>
+                <p>
+                    Stove
+                </p>
+            </div>
+        
+            <div class="rest-serv end">
+                <div class="image">
+                    <img src="images/icons/icons8-parking-50.webp" alt="wifi">
+                </div>
+                <p>
+                    Free Parking
+                </p>
+            </div>
+            <div class="rest-serv">
+                <div class="image">
+                    <img src="images/icons/icons8-spa-50.webp" alt="wifi">
+                </div>
+                <p>
+                    Hot water
+                </p>
+            </div>
+            <div class="rest-serv end">
+                <div class="image">
+                    <img src="images/icons/icons8-fridge-50.webp" alt="wifi">
+                </div>
+                <p>
+                    Fridge
+                </p>
+            </div>
+            <div class="rest-serv">
+                <div class="image">
+                    <img src="images/icons/icons8-towel-50.webp" alt="clean">
+                </div>
+                <p>
+                    Clean towels and bed covers
+                </p>
+            </div>
+            <div class="rest-serv end">
+                <div class="image">
+                    <img src="images/icons/icons8-microwave-50.webp" alt="wifi">
+                </div>
+                <p>
+                    Microwave
+                </p>
+            </div>
+            <div class="rest-serv">
+                <div class="image">
+                    <img src="images/icons/icons8-bath-50.webp" alt="Bath">
+                </div>
+                <p>
+                    Bath/Shower
+                </p>
+            </div>        
+        </div>
+    </section>
+
+    <section class="contact-bar">
+        <div class="title">
+            <h2>
+                Do you want to Rent your House
+            </h2>
+            <h3>
+                Call us and list your property here
+            </h3>
+        </div>
+
+        <div class="contacts">
+            <h3>
+                +201223219338
+            </h3>
+            <h3>
+                agouzanileview@outlook.com
+            </h3>
+        </div>
+    </section>
+
+    <section class="gallery" id="gellery">
+        <div class="title">
+            <h2>
+                Our Photo Gallery
+            </h2>
+        </div>
+        
+        <div class="picture">
+            <div class="grid-item">
+                <a href="images/nile_view_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/nile_view_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/room1_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/room1_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/dinner_table2.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/dinner_table2.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/living_room_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/living_room_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/Hall_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/Hall_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/room2_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/room2_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/nile_view2_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/nile_view2_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/reception2.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/reception2.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/room3_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/room3_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/Reception_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/Reception_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/kitchen_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/kitchen_big.webp" alt="gallery">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/bathroom_big.webp" data-lightbox="Rooms" data-title="Rooms">
+                    <img src="images/bathroom_big.webp" alt="gallery">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="title">
+            <h2>
+                SOME REVIEWS
+            </h2>
+        </div>
+
+        <div class="review-swiper mySwiperReviews">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/germany-flag-icon.webp" alt="germany">
+                        <h2>
+                            Fritz
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            Amazing apartment! The view is stunning, and the location is<br>
+                            perfect. Will definitely come back.
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★★
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/booking_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/nigeria.webp" alt="Nigeria">
+                        <h2>
+                            Adanna
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            The location overlooking Zamalek and the Nile is unique! The<br>
+                            apartment is huge and as a base for trips to all the highlights in<br>
+                            Cairo ideally suited. We were very satisfied.
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★★
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/booking_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/Flag_of_Qatar.webp" alt="Qatar">
+                        <h2>
+                            Sharif
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            Great stay! The apartment was clean and well-equipped. The<br>
+                            staff was very helpful and friendly.I had a great time,<br>
+                            Thank you ahmed.
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★☆
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/airbnb_logo.webp" alt="bnb">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/germany-flag-icon.webp" alt="germany">
+                        <h2>
+                            Christiane
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            The apartment was large and had a nice little balcony<br>
+                            overlooking the Nile. The central location makes it easy to visit<br>
+                            the sights of Cairo from there. Ahmed was happy to<br>
+                            accommodate our requests without any problems.”.
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★★
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/booking_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/Saudi_arabia_flag_large.webp" alt="Saudi_arabia">
+                        <h2>
+                            Mahmood
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            Everything was perfect and the Internet was good and the<br>
+                            owner of the apartment cooperated with me. beautiful and<br>
+                            wonderful location, furniture is antique , and the small balcony<br>
+                            on the nile was mesmerising ”
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★☆
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/airbnb_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/Flag_of_Norway.webp" alt="Saudi_arabia">
+                        <h2>
+                            Ahmed
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            كل شي كان تمام وكويس جدا الموقع تحفه ابن الدكتور عصام كلمني وفي منتهى<br>
+                            الأدب والتعامل الشيك شكرا
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★☆
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/airbnb_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/Flag_of_the_Czech_Republic.webp" alt="Czech">
+                        <h2>
+                            Olga
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            Very beautiful apartment at the last floor of the high building,<br>
+                            everything was working, amazing view on Nile from the<br>
+                            windows. Not far from the apartment is a national circus with lions<br>
+                            and tigers, but it was not disturbing because we like circus and<br>
+                            music and we visited the circus, and performance was very impressive.
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★★
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/airbnb_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-tilt>
+                    <div class="title">
+                        <img src="images/country/Flag_of_the_United_States.webp" alt="USA">
+                        <h2>
+                            Nathaniel
+                        </h2>
+                    </div>
+
+                    <div class="reviewp">
+                        <p>
+                            The apartment is large, has a good view, and is well-situated<br>
+                            for Cairo and Giza sightseeing. The manager is very responsive<br>
+                            and helpful, and even provided some snacks for us. My friend and<br>
+                            I had a wonderful stay, and if I return to Cairo I will absolutely<br>
+                            be checking the availability here :)
+                        </p>
+                    </div>
+
+                    <div class="review-star-bkn">
+                        <div class="star">
+                            ★★★★★
+                        </div>
+
+                        <div class="site-logo">
+                            <img src="images/booking_logo.webp" alt="booking">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="location-container" id="location">
+        <div class="title">
+            <h2>
+                Where you'll be
+            </h2>
+            <h3>
+                Agouza, Giza, Egypt
+            </h3>
+        </div>
+        
+        <div class="location">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="title">
+            <h2>
+                Get in touch
+            </h2>
+            <h3>
+                Contact us for any questions or concerns.
+            </h3>
+        </div>
+
+        <div class="info-cont">
+            <div class="info">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="paragraph">
+                    <p>
+                        65 Abu El Maaty St., Agouza, Giza
+                    </p>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="paragraph">
+                    <p>
+                        +201223219338
+                    </p>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="paragraph">
+                    <p>
+                        agouzanileview@outlook.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="title">
+                <h2>
+                    Contact Us
+                </h2>
+            </div>
+
+            <div class="inputs">
+                <div class="left">
+                    <div class="name">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+    
+                    <div class="Mail">
+                        <label for="Mail" id="mail-label">E-Mail</label>
+                        <input type="text" id="Mail" placeholder="Your E-Mail" class="">
+                    </div>
+                    <div class="phone">
+                        <label for="phone" id="phone-label">WhatsApp Number</label>
+                        <input type="text" id="phone" placeholder="whatApp Number" class="">
+                    </div>
+                </div>
+                <div class="messages">
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <input type="text" id="message">
+                    </div>
+
+                    <div class="fields" id="fields_contact">
+                        <p>
+                            mail or Whatsapp needed 😊
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="submit">
+                <button>
+                    Send Message
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="logo">
+            <div class="image">
+                <a href="index.html">
+                    <img src="images/logo.webp" alt="Agouza Nile View Apartment Logo" style="object-fit: unset;">
+                </a>
+            </div>
+
+            <div class="copy-right">
+                <p>
+                    Copyright ©<span>2023</span> AgouzaNileView. All rights reserved
+                </p>
+
+                <p>
+                    Developed By
+                    <a href=" https://www.fiverr.com/kerolos_amiel" target="_blank">Kerolos Amiel</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <a href="tel:+201223219338">
+                <i class="fa-solid fa-phone-volume"></i>
+            </a>
+
+            <a href="https://wa.me/+201223219338" target="_blank" class="whatsapp-number">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="confirm-popup">
+        <div class="cont">
+            <h2>
+                Booking request submitted successfully!
+            </h2>
+    
+            <h3>
+                We will get back to you as soon as possible 😊.
+            </h3>
+    
+            <button id="conf-button">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script/lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/booking.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/map.js"></script>
+    <script src="script/smallScreen.js"></script>
+    <script src="script/message.js"></script>
+</body>
+</html>

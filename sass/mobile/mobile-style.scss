@@ -1,0 +1,36 @@
+@use "./helper/mixin" as *;
+
+// mobile and tablet screen
+@media(max-width: 1024px){
+    @include media();
+}
+
+@media(min-width:765px) and (max-width: 1024px){
+    @include photo-medium();
+}
+
+@media(max-width:766.98px){
+    @include photo-small();
+}
+
+@media(max-width: 765px){
+    @include medium();
+}
+
+@media  (min-width: 495px) and (max-width: 660px) {
+    @include body(12px);
+}
+
+@media  (min-width: 371px) and (max-width: 494.98px) {
+    @include body(9px);
+
+}
+
+@media(max-width: 370.98px) {
+    @include body(8px);
+}
+
+// small laptop
+@media (min-width: 1024px) and (max-width:1197.98px){
+    @include body(14px);
+}

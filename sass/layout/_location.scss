@@ -1,0 +1,77 @@
+@use "../helper/var" as *;
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            @extend %titles;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 1em;
+            color: $primary-color;
+        }
+    }
+
+    .location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+
+        #map {
+            width: 100%;
+            height: 400px;
+        } 
+
+    //     .location-info {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         flex-wrap: wrap;
+    //         width: 50%;
+
+    //         .divs {
+    //             display: flex;
+    //             flex-direction: column;
+    //             width: 50%;
+    //             height: 10em;
+    //             gap: 1em;
+
+    //             .location-info-title {
+    //                 display: flex;
+    //                 align-items: center;
+    //                 gap: 0.5em;
+    //                 h2 {
+    //                     @extend %titles;
+    //                     font-size: 2em;
+    //                 }
+
+    //                 i {
+    //                     color: $primary-color;
+    //                     font-size: 2.1em;
+    //                 }
+    //             }
+
+    //             .info-p {
+    //                 p{
+    //                     color: $dark-gray;
+    //                     font-weight: 700;
+    //                 }
+    //             }
+    //         }
+    //     }
+    }
+}

@@ -1,0 +1,30 @@
+@use "../helper/var" as *;
+
+.info-bubbles {
+    display: flex;
+    gap: 1.5em;
+    padding: 4em;
+    background: linear-gradient(30deg, $primary-color, #4193d9);
+
+    .bubble {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        filter: drop-shadow(1px 3px 7px black);
+        text-align: center;
+        gap: 1em;
+        .icon {
+            display: flex;
+            max-width: 60px;
+            max-height: 60px;
+            /* margin-bottom: 10px; */
+            filter: invert(1);
+        }
+        p {
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+    }
+}

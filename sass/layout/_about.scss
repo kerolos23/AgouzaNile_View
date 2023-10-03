@@ -1,0 +1,95 @@
+@use "../helper/var" as *;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 2em;
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        h2 {
+            @extend %titles;
+        }
+
+        h3 {
+            font-weight: 700;
+            color: $primary-color;
+        }
+    }
+
+    .about-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        padding: 2em;
+    
+        .words {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+
+            .info-title {
+                h3 {
+                    font-size: 1.25em;
+                    font-weight: 800;
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 1em;
+                    font-weight: 600;
+                    line-height: 1.4;
+
+                    &::marker {
+                        font-size: 1.4em;
+                        color: orange !important;                    
+                    }
+
+                    ul {
+                        padding-left: 15%;
+                    }
+                }
+            }
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 1.5em;
+            filter: drop-shadow(2px 4px 6px #000);
+
+            .swiper-any {
+                width: 18em;
+                height: 23em;
+                .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 1.2em;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+            img {
+                object-fit: cover;
+                transition: 1s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

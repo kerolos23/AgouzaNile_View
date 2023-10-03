@@ -1,0 +1,40 @@
+@use "../helper/var" as *;
+
+.contact-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    background: linear-gradient(30deg, $primary-color, #4193d9);
+    position: relative;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        h2 {
+            @extend %titles;
+            color: $white;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            font-weight: 800;
+            color: $orange;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5em;
+        position: relative;
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 800;
+            color: $white !important;
+            text-decoration: none;
+        }
+    }
+}

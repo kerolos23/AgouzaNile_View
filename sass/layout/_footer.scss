@@ -1,0 +1,56 @@
+@use "../helper/var" as *;
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    height: 5em;
+    background-color: $black;
+    color: $white;
+    .logo {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        .image {
+            display: flex;
+            width: 20em;
+        }
+
+        .copy-right {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5em;
+
+            p {
+                font-weight: 600;
+                font-size: .8em;
+            }
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                font-weight: 700;
+                color: orange;
+                font-size: .8em;
+            }
+        }
+    }
+
+    .contacts {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-size: 2em;
+            color: $white;
+            transition: .5s ease;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}

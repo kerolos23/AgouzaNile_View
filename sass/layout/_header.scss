@@ -1,0 +1,160 @@
+@use "../helper/var" as *;
+
+header {
+    background-color: $dark;
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 4em;
+        gap: 1.5em;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .site-logo {
+                display: flex;
+                width: 20em;
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .left-content {
+                position: relative;
+                display: flex;
+                gap: 2em;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 2em;
+
+                    li {
+                        position: relative;
+                        cursor: pointer;
+                        i {
+                            font-size: 2em;
+                            color: $white;
+                            transition: .5s ease;
+                            &:hover {
+                                color: $orange;
+                            }
+                            
+                        }
+
+                        .call-list {
+                            display: flex;
+                            position: absolute;
+                            flex-direction: column;
+                            right: 0;
+                            top: 300%;
+                            width: fit-content;
+                            height: fit-content;
+                            padding: 0.5em;
+                            background: #fff;
+                            border: 1px solid orange;
+                            border-radius: 0.5em;
+                            box-shadow: 2px 4px 14px $black;
+                            gap: 2em;
+                            opacity: 0;
+                            transition: 1s ease;
+                            z-index: 999999999;
+                            i {
+                                color: $orange
+                            }
+                            a {
+                                display: inline-flex;
+                                flex-direction: row;
+                                text-decoration: none;
+                                align-items: center;
+                                color: $white;
+                                gap: 1em;
+                                
+                                p {
+                                    color: $primary-color;
+                                    font-weight: 700;
+                                    text-shadow: 2px 2px 9px black;
+                                }
+                            }
+                        }
+
+                        .call-list-open{
+                            opacity: 1;
+                            top: 150%;
+                        }
+                    }
+                }
+
+                .translate {
+                    visibility: hidden;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    background: #fff;
+                    padding: 2em;
+                    transition: 1s ease;
+                    z-index: 999999999999999999999999999999999;
+                    gap: 2em;
+                    font-weight: 800;
+                    border-radius: 1em;
+                    right: 0;
+                    top: 500%;
+                    border: 2px solid $orange;
+                    opacity: 0;
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
+
+                .close-translate {
+                    top: 500%;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+            }
+
+            .burger {
+                display: none;
+            }
+        }
+
+        .line {
+            width: 100%;
+            height: .2em;
+            background-color: $dark-gray;
+        }
+
+        .header-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+                display: inline-flex;
+                gap: 3em;
+                list-style: none;
+                a {
+                    display: block;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    position: relative;
+                    color: $white;
+                    backface-visibility: hidden;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    transition: .6s ease;
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

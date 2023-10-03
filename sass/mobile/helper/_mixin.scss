@@ -1,0 +1,594 @@
+@mixin body($font-body){
+    body {
+        font-size: $font-body !important;
+    }
+}
+
+@mixin media(){
+    header {
+        .container {
+            position: relative;
+            padding: 2em 1.5em;
+            .header-bottom {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: fixed;
+                color: #000 !important;
+                width: 100%;
+                height: 100%;
+                background: #0000;
+                left: 150%;
+                top: 0;
+                z-index: 999999999;
+                transition: .5s ease;
+
+                ul {
+                    flex-direction: column;
+                    width: 50%;
+                    height: 100%;
+                    background-color: #0e385d;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .active-menu {
+                left: 0;
+            }
+
+            .line {
+                display: none;
+            }
+        }
+    }
+    .header-top {
+        .row {
+            .burger {
+                display: flex !important;
+                font-size: 2em;
+                color: #fff;
+                z-index: 9999999999999999999999999999999999999999999999;
+                .close {
+                    display: none;
+                }
+            }
+
+            .site-logo {
+                width: 15em !important;
+            }
+        }
+    }
+    .landign {
+        height: 70dvh;
+        overflow: hidden;
+        .info {
+            p {
+                font-size: 0.9em;
+            }
+        }
+
+        .swiper-slide:nth-child(1) img {
+            content: url(./images/nile_view_medium.webp);
+        }
+        .swiper-slide:nth-child(2) img {
+            content: url(./images/nile_view2_medium.webp);
+        }
+        .swiper-slide:nth-child(3) img {
+            content: url(./images/Reception_medium.webp);
+        }
+    }
+        
+    .about{
+        .about-info {
+            grid-template-rows: 1fr auto;
+            grid-template-columns: unset;
+            justify-content: unset;
+            width: 100%;
+            .words{
+                justify-content: unset;
+                flex-direction: column;
+                .info-title {
+                    h3 {
+                        font-size: 2.25em;
+                    }
+                }
+
+                ul {
+                    li {
+                        line-height: 1.7;
+                        margin-left: .5em;
+                        &::marker {
+                            font-size: 1.8em;
+                        }
+
+                        p {
+                            font-size: 1.8em;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+
+            .images {
+                margin: 1.2em 0;
+            }
+        }
+    }
+
+    .info-bubbles{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.6em;
+        .bubble {
+            width: calc((100% - 3em) / 2 );
+            .icon {
+                max-width: 40px !important;
+                max-height: 40px !important;
+            }
+
+            p{
+                font-size: 1.5em !important;
+            }
+        }
+    }
+
+    .contact-bar {
+        padding: 2em !important;
+        gap: 2.5em;
+        text-align: center;
+        flex-direction: column;
+        .title {
+            h2 {
+                font-size: 1.7em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+        }
+
+        .contacts {
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .services {
+        gap: 3em;
+        .container {
+            grid-template-rows: auto 1fr;
+            grid-template-columns: unset;
+            .title {
+                margin: 2em 0;
+                h2 {
+                    font-size: 3.8em !important;
+                }
+            }
+
+            .services-info {
+                padding: 0 1em;
+                .line-style {
+                    ul {
+                        padding: 0 1em;
+                    }
+                }
+                li {
+                    font-size: 1.8em !important;
+                    line-height: 1.7;
+                }
+            }
+        }
+
+        .the-rest {
+            gap: 1.8em;
+            .rest-serv {
+                width: calc((100% - 2em) / 2) !important;
+                height: 10em;
+                justify-content: space-between;
+                .image {
+                    width: 3em;
+                    height: 3.2em;
+                }
+                p {
+                    font-size: 1.5em ;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            .image {
+                width: 13em;
+            }
+            .copy-right {
+                flex-direction: column;
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    .confirm-popup {
+        .cont {
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+        }
+    }
+    .availability {
+        height: unset;
+        padding: 6em 2em;
+        .availability-book {
+            width: 100%;
+            .date-inputs {
+                width: 100%;
+                gap: 1em;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                .input-wrapper {
+                    margin: 0 auto;
+                    width: calc((100% - 2em) / 2);
+                    justify-content: center;
+                    align-items: center;
+                    label {
+                        font-weight: 900;
+                    }
+                    input {
+                        width: 100%;
+                        font-size: 1.3em;
+                    }
+                    select {
+                        width: 100%;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .bnb {
+                .title {
+                    font-size: 1.2em;
+                    font-weight: 700;
+                }
+            }
+            .popup-container {
+                .popup  { 
+                    .contact-info {
+                        .input-cont {
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        .about-info {
+            .words {
+                ul {
+                    li {
+                        font-weight: 600;
+                    }
+                } 
+            }
+            .images {
+                .swiper-any {
+                    width: 16em;
+                    height: 22em;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        .review-swiper {
+            .swiper-slide {
+                .reviewp {
+                    width: 100%;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .title {
+            h2 {
+                font-size: 2.9em;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+        }
+        .info-cont {
+            flex-wrap: wrap;
+            gap: 1.5em;
+            .info {
+                width: calc((100% - 1.5em) / 2);
+                height: unset;
+                padding: 1.2em;
+                border: 1px solid #eeeeee;
+
+                .icon {
+                    i {
+                        font-size: 2.6em;
+                    }
+                }
+                
+                p {
+                    font-size: 1.2em;
+                }
+            }
+            .info:nth-child(3) {
+                p {
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        .contact-container {
+            .inputs {
+                label {
+                    font-weight: 800 !important;
+                }
+            }
+        }
+    }
+}
+
+@mixin medium(){
+    .availability {
+        .availability-book {
+            .date-inputs {
+                .input-wrapper {
+                    width: calc((100% - 2em) / 2);
+                    input {
+                        width: 100%;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            
+            .popup-container {
+                .popup {
+                    height: unset;
+                }
+            }
+        }
+    }
+    .landign {
+        .info {
+            gap: 3em;
+            p {
+                font-size: 1.7em;
+                padding: 0 0.6em;
+            }
+        }
+    }
+
+    .gallery {
+        .picture {
+            .grid-item {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            .grid-item:nth-child(3n - 2) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    }
+
+    .info-bubbles {
+        padding: 3em;
+    }
+
+    .rest-serv {
+        p {
+            font-size: 1.3em !important;
+        }
+    }
+
+    .contact {
+        .contact-container {
+            width: 80%;
+        }
+    }
+
+    footer {
+        padding: 0 1em;
+        gap: .5em;
+        .logo {
+            gap: 0;
+            .image {
+                width: 15em;
+            }
+        }
+
+        .copy-right {
+            text-align: center;
+            p {
+                font-size: 0.77em !important;
+            }
+        }
+    }
+}
+
+@mixin photo-medium() {
+    .grid-item:nth-child(1){
+        a {
+            img {
+                content: url(./images/nile_view_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(2){
+        a {
+            img {
+                content: url(./images/room1_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(3){
+        a {
+            img {
+                content: url(./images/dinner_table_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(4){
+        a {
+            img {
+                content: url(./images/living_room_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(5){
+        a {
+            img {
+                content: url(./images/Hall_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(6){
+        a {
+            img {
+                content: url(./images/room2_medium.webp);
+            }
+        }
+    }
+
+    .grid-item:nth-child(7){
+        a {
+            img {
+                content: url(./images/nile_view2_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(9){
+        a {
+            img {
+                content: url(./images/room3_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(10){
+        a {
+            img {
+                content: url(./images/Reception_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(12){
+        a {
+            img {
+                content: url(./images/kitchen_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(11){
+        a {
+            img {
+                content: url(./images/bathroom_medium.webp);
+            }
+        }
+    }
+}
+
+@mixin photo-small() {
+    .grid-item:nth-child(1){
+        a {
+            img {
+                content: url(./images/nile_view_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(2){
+        a {
+            img {
+                content: url(./images/room1_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(3){
+        a {
+            img {
+                content: url(./images/dinner_table_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(4){
+        a {
+            img {
+                content: url(./images/living_room_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(5){
+        a {
+            img {
+                content: url(./images/Hall_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(6){
+        a {
+            img {
+                content: url(./images/room2_small.webp);
+            }
+        }
+    }
+
+    .grid-item:nth-child(7){
+        a {
+            img {
+                content: url(./images/nile_view2_medium.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(9){
+        a {
+            img {
+                content: url(./images/room3_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(10){
+        a {
+            img {
+                content: url(./images/Reception_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(12){
+        a {
+            img {
+                content: url(./images/kitchen_small.webp);
+            }
+        }
+    }
+    .grid-item:nth-child(11){
+        a {
+            img {
+                content: url(./images/bathroom_small.webp);
+            }
+        }
+    }
+}
+
